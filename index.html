@@ -20,7 +20,7 @@
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-  <!-- SheetJS xuất file .xlsx -->
+  <!-- SheetJS xuất file Excel (.xlsx / .xls) -->
   <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 
   <style>
@@ -70,7 +70,7 @@
         </div>
 
         <div class="space-y-3 my-4 bg-gray-50 p-4 rounded-lg">
-          <p class="font-medium text-sm text-gray-700">Chọn nghiệm của phương trình ở câu b:</p>
+          <p class="font-medium text-sm text-gray-700">Chọn nghiệm đúng của phương trình ở câu b:</p>
           <label class="flex items-center space-x-3 cursor-pointer">
             <input type="radio" name="q1" value="A" onclick="playSelectSound()" class="h-4 w-4 text-blue-600">
             <span>A. $x = 0$</span>
@@ -90,7 +90,7 @@
         </div>
 
         <button type="button" onclick="toggleSolution('sol1')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-1 mt-2">
-          🔍 Xem/Ẩn đáp án và lời giải chi tiết (Click lần 1: Hiện | Click lần 2: Ẩn)
+          🔍 Click lần 1 xuất xem đáp án và lời giải chi tiết | Click lần 2 ẩn
         </button>
 
         <div id="sol1" class="hidden mt-4 p-4 bg-blue-50 border-l-4 border-blue-500 rounded text-sm text-gray-800 space-y-3">
@@ -107,7 +107,7 @@
               <tr><th>$f(x)$</th><td>||</td><td>$\searrow$</td><td>0</td><td>$\nearrow$</td><td>$+\infty$</td></tr>
             </table>
           </div>
-          <p>Từ bảng biến thiên ta được $f(x) \ge 0, \forall x > 0$. Suy ra ĐPCM.</p>
+          <p>Từ bảng biến thiên ta được $f(x) \ge 0, \forall x > 0$. Suy ra điều phải chứng minh.</p>
           <p><strong>b)</strong> Phương trình $\Leftrightarrow (2x^2+4x)\ln x - 5x^2 + 4x + 1 = x - e^{x-1}$ (với $x > 0$).</p>
           <p>Đặt $g(x) = x - e^{x-1} \Rightarrow g'(x) = 1 - e^{x-1} = 0 \Leftrightarrow x = 1$. Lập BBT ta có $g(x) \le 0, \forall x > 0$.</p>
           <p>Do $f(x) \ge 0$ và $g(x) \le 0$ nên $f(x) = g(x) \Leftrightarrow \begin{cases} f(x) = 0 \\ g(x) = 0 \end{cases} \Leftrightarrow x = 1$.</p>
@@ -143,7 +143,7 @@
         </div>
 
         <button type="button" onclick="toggleSolution('sol2')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-1 mt-2">
-          🔍 Xem/Ẩn đáp án và lời giải chi tiết (Click lần 1: Hiện | Click lần 2: Ẩn)
+          🔍 Click lần 1 xuất xem đáp án và lời giải chi tiết | Click lần 2 ẩn
         </button>
 
         <div id="sol2" class="hidden mt-4 p-4 bg-blue-50 border-l-4 border-blue-500 rounded text-sm text-gray-800 space-y-3">
@@ -187,7 +187,7 @@
         </div>
 
         <button type="button" onclick="toggleSolution('sol3')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-1 mt-2">
-          🔍 Xem/Ẩn đáp án và lời giải chi tiết (Click lần 1: Hiện | Click lần 2: Ẩn)
+          🔍 Click lần 1 xuất xem đáp án và lời giải chi tiết | Click lần 2 ẩn
         </button>
 
         <div id="sol3" class="hidden mt-4 p-4 bg-blue-50 border-l-4 border-blue-500 rounded text-sm text-gray-800 space-y-3">
@@ -229,7 +229,7 @@
         </div>
 
         <button type="button" onclick="toggleSolution('sol4')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-1 mt-2">
-          🔍 Xem/Ẩn đáp án và lời giải chi tiết (Click lần 1: Hiện kèm hình vẽ SVG | Click lần 2: Ẩn)
+          🔍 Click lần 1 xuất xem đáp án và lời giải chi tiết | Click lần 2 ẩn
         </button>
 
         <div id="sol4" class="hidden mt-4 p-4 bg-blue-50 border-l-4 border-blue-500 rounded text-sm text-gray-800 space-y-3">
@@ -298,7 +298,7 @@
         </div>
 
         <button type="button" onclick="toggleSolution('sol5')" class="text-sm font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-1 mt-2">
-          🔍 Xem/Ẩn đáp án và lời giải chi tiết (Click lần 1: Hiện | Click lần 2: Ẩn)
+          🔍 Click lần 1 xuất xem đáp án và lời giải chi tiết | Click lần 2 ẩn
         </button>
 
         <div id="sol5" class="hidden mt-4 p-4 bg-blue-50 border-l-4 border-blue-500 rounded text-sm text-gray-800 space-y-3">
@@ -311,30 +311,30 @@
         </div>
       </div>
 
-      <!-- Nút Nộp Bài dành cho Học sinh & Xuất file Excel dành cho Admin -->
+      <!-- Nút Nộp BÀI HỌC SINH & XUẤT FILE EXCEL ADMIN -->
       <div class="mt-8 flex flex-col md:flex-row gap-4 justify-center items-center">
         <button type="button" onclick="submitQuiz()" class="w-full md:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition transform active:scale-95 flex items-center justify-center gap-2">
-          🚀 Nộp Bài (Dành cho Học Sinh)
+          🚀 Nộp Bài (Dành Cho Học Sinh)
         </button>
         <button type="button" onclick="adminExportExcel()" class="w-full md:w-auto bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition transform active:scale-95 flex items-center justify-center gap-2">
-          🔒 Xuất file .xlsx (Dành cho Admin)
+          🔒 Xuất File .xls / .xlsx (Dành Cho Admin)
         </button>
       </div>
 
     </form>
   </div>
 
-  <!-- Javascript Âm thanh, Nộp bài & Xuất File Excel Admin -->
+  <!-- SCRIPT XỬ LÝ ÂM THANH, PHÂN QUYỀN VÀ XUẤT EXCEL -->
   <script>
     const AudioContext = window.AudioContext || window.webkitAudioContext;
     let audioCtx = null;
-    let submissionsDatabase = []; // Lưu trữ kết quả các lần nộp bài
+    let submissionsDatabase = []; // Mảng lưu kết quả danh sách bài làm của học sinh
 
     function initAudio() {
       if (!audioCtx) audioCtx = new AudioContext();
     }
 
-    // Âm thanh sôi động khi chọn câu trả lời
+    // Âm thanh khi chọn câu trả lời
     function playSelectSound() {
       initAudio();
       if (audioCtx.state === 'suspended') audioCtx.resume();
@@ -342,8 +342,8 @@
       const gain = audioCtx.createGain();
       
       osc.type = 'sine';
-      osc.frequency.setValueAtTime(587.33, audioCtx.currentTime); // D5
-      osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.15); // A5
+      osc.frequency.setValueAtTime(587.33, audioCtx.currentTime);
+      osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.15);
 
       gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
       gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.15);
@@ -354,7 +354,7 @@
       osc.stop(audioCtx.currentTime + 0.15);
     }
 
-    // Âm thanh sôi động mừng chiến thắng khi Nộp bài
+    // Âm thanh sôi động khi nộp bài
     function playSubmitSound() {
       initAudio();
       if (audioCtx.state === 'suspended') audioCtx.resume();
@@ -388,7 +388,7 @@
       const stt = document.getElementById('studentStt').value.trim();
 
       if (!name || !studentClass || !stt) {
-        alert('Vui lòng điền đầy đủ Họ tên, Lớp và Số thứ tự trước khi Nộp bài!');
+        alert('Vui lòng điền đầy đủ Họ tên, Lớp và Số thứ tự trước khi nộp bài!');
         return;
       }
 
@@ -403,11 +403,12 @@
         const selected = document.querySelector(`input[name="${qName}"]:checked`);
         const userAns = selected ? selected.value : 'Chưa chọn';
         const isCorrect = userAns === correctAnswers[qName];
-        if (isCorrect) score += 2;
+        if (isCorrect) score += 2; // Thang điểm 10
+
         details[`Câu ${i}`] = `${userAns} (${isCorrect ? 'Đúng' : 'Sai'})`;
       }
 
-      // Lưu bài làm vào danh sách quản lý
+      // Lưu bài làm vào danh sách dữ liệu Admin
       submissionsDatabase.push({
         'STT': stt,
         'Họ và tên': name,
@@ -417,19 +418,19 @@
         ...details
       });
 
-      alert(`🎉 BẠN ĐÃ NỘP BÀI THÀNH CÔNG!\n\n• Họ tên: ${name}\n• Lớp: ${studentClass}\n• Điểm đạt được: ${score}/10 điểm.`);
+      alert(`🎉 NỘP BÀI THÀNH CÔNG!\n\n• Họ tên: ${name}\n• Lớp: ${studentClass}\n• Điểm đạt được: ${score}/10 điểm.`);
     }
 
-    // Xuất file Excel (.xlsx) dành cho người đăng nhập Admin
+    // Xuất file .xls / .xlsx dành cho Admin (Giáo viên)
     function adminExportExcel() {
-      const password = prompt('Mật khẩu Admin để xuất file Excel danh sách học sinh:');
-      if (password !== 'admin123') {
-        alert('Mật khẩu Admin không chính xác! (Mật khẩu mặc định: admin123)');
+      const password = prompt('Mật khẩu Admin để đăng nhập xuất file Excel danh sách bài làm:');
+      if (password !== '123') {
+        alert('Mật khẩu Admin không chính xác! (Mật khẩu mặc định:)');
         return;
       }
 
       if (submissionsDatabase.length === 0) {
-        alert('Chưa có học sinh nào nộp bài để xuất file Excel!');
+        alert('Chưa có lượt nộp bài nào của học sinh để xuất file Excel!');
         return;
       }
 
@@ -437,6 +438,7 @@
       const ws = XLSX.utils.json_to_sheet(submissionsDatabase);
       XLSX.utils.book_append_sheet(wb, ws, 'DanhSachKetQua');
 
+      // Tải về file dạng .xlsx (tương thích hoàn toàn với Excel)
       XLSX.writeFile(wb, `DanhSach_KetQua_KiemTra_Toan12.xlsx`);
     }
   </script>
